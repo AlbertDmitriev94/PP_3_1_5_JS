@@ -13,11 +13,11 @@
             <form method="POST" action="/login">
                 <h2>Please sign in</h2>
                 <input class="form-control" type="text" autofocus required
-                       name="username" placeholder="Username">
+                       name="email" placeholder="Email">
                 <input class="form-control my-2" type="password" required
                        name="password" placeholder="Password">
                 <div class="form-text text-danger" th:if="${param.error}">
-                    Invalid login or password
+                    Invalid email or password
                 </div>
                 <input class="btn btn-primary w-100" type="submit" value="Sign in">
             </form>
